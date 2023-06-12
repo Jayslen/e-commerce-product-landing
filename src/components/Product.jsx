@@ -43,7 +43,7 @@ export function Product() {
             <div className="absolute top-1/2 left-1 cursor-pointer bg-white p-2 rounded-full grid place-content-center z-30 md:hidden" onClick={prev}>
               <IconChevronLeft />
             </div>
-          <figure className={`flex -translate-x-[${translate}%] transition-all duration-200`}>
+          <figure className='flex transition-all duration-200' style={{transform:`translateX(-${translate}%)`}}>
             <img
               src={PRODUCTS_SRC[currentImg]}
               alt="shoes-white-with-brown"
