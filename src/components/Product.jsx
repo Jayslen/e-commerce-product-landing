@@ -24,7 +24,8 @@ export function Product() {
   }
 
   const chageCurrentImg = (index) => {
-    setCurrentImg(index);
+    setTranslate(index * 100)
+    setCurrentImg(index )
   };
   const handleClick = () => {
     setShowProduct(!showProduct);
@@ -35,17 +36,17 @@ export function Product() {
       <article className="sm:w-[450px] flex flex-col gap-3 select-none">
         <div className="overflow-hidden relative">
             <div
-              className="absolute top-1/2 right-1 cursor-pointer bg-white p-2 rounded-full grid place-content-center z-30 md:hidden"
+              className="absolute top-1/2 right-1 cursor-pointer bg-white p-2 rounded-full grid place-content-center z-20 md:hidden"
               onClick={next}
             >
               <IconChevronRight />
             </div>
-            <div className="absolute top-1/2 left-1 cursor-pointer bg-white p-2 rounded-full grid place-content-center z-30 md:hidden" onClick={prev}>
+            <div className="absolute top-1/2 left-1 cursor-pointer bg-white p-2 rounded-full grid place-content-center z-20 md:hidden" onClick={prev}>
               <IconChevronLeft />
             </div>
           <figure className='flex transition-all duration-200' style={{transform:`translateX(-${translate}%)`}}>
             <img
-              src={PRODUCTS_SRC[currentImg]}
+              src={PRODUCTS_SRC[0]}
               alt="shoes-white-with-brown"
               className={`w-full sm:rounded-xl cursor-pointer ${
                 screen >= 450 ? 'hover:brightness-75' : ''

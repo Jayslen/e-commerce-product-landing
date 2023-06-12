@@ -19,7 +19,7 @@ export function Header () {
     setshowMobileMenu(!showMobileMenu)
   }
   return (
-    <header className='h-20 w-screen flex justify-center'>
+    <header className='h-20 w-full flex justify-center'>
       {showMobileMenu ? <MobileMenu translate='0' event={hideMobileMenu} /> : ''}
       <nav className=' flex justify-between h-full w-screen px-4 relative md:w-[70vw] md:p-0'>
         <div className='absolute bg-[#b6bcc8] w-full h-[1px] top-[79px] hidden md:block' />
