@@ -32,7 +32,7 @@ export function Product() {
 
   return (
     <>
-      <article className="sm:w-[500px] flex flex-col gap-3 select-none">
+      <article className="sm:w-[450px] flex flex-col gap-3 select-none">
         <div className="overflow-hidden relative">
             <div
               className="absolute top-1/2 right-1 cursor-pointer bg-white p-2 rounded-full grid place-content-center z-30 md:hidden"

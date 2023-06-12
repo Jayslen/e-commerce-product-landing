@@ -13,7 +13,7 @@ export function Description () {
   }
 
   return (
-    <article className='flex flex-col gap-5 px-3 sm:w-[500px] sm-p-0 mb-5 md:mb-0'>
+    <article className='flex flex-col gap-5 px-3 sm:w-[450px] sm-p-0 mb-5 md:mb-0'>
       <h3 className='font-bold text-[#ff7d1a]'>SNEAKER COMPANY</h3>
       <h2 className='text-xl sm:text-5xl font-bold'>Fall Limited Edition Sneakers</h2>
       <p className='text-[#68707d] text-lg'>
